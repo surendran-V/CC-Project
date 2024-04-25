@@ -14,6 +14,7 @@ db = client['ecommerce']
 users_collection = db['users']
 logged_in_collection = db['logged_in']
 
+
 @app.route("/add_user", methods=['POST'])
 def add_user():
     user_name = request.args.get('user_name')
