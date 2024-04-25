@@ -9,6 +9,7 @@ from datetime import datetime, timezone
 app = Flask(__name__)
 api = Api(app)
 
+
 client = MongoClient('mongodb://mongodb-service:27017/')
 db = client['ecommerce']
 orders_collection = db['orders']
